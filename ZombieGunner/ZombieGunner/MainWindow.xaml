@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ZombieGunner"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="ZombieGunner" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
+        <Label Content="ZombieGunner" HorizontalAlignment="Center" Height="100" Margin="0,50,0,0" VerticalAlignment="Top" Width="296" FontSize="32pt"/>
+        <Button Content="Play" HorizontalAlignment="Center" Height="50" VerticalAlignment="Center" Width="100" Click="Play_Click"/>
+        <Button Content="Exit" HorizontalAlignment="Center" Height="50" VerticalAlignment="Top" Width="100" Margin="0,250,0,0" Click="Exit_Click"/>
+        <Label Content="Highscore" HorizontalAlignment="Left" Height="40" Margin="620,100,0,0" VerticalAlignment="Top" Width="150" FontSize="16pt"/>
+        <ListBox x:Name="High" IsEnabled="False" HorizontalAlignment="Left" Height="200" Margin="620,150,0,0" VerticalAlignment="Top" Width="150"/>
 
     </Grid>
 </Window>

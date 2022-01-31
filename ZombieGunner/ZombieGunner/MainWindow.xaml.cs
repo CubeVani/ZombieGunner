@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace ZombieGunner
 {
@@ -24,5 +25,28 @@ namespace ZombieGunner
         {
             InitializeComponent();
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            string[] tmp = File.ReadAllLines("../../../Highscore.txt");
+            foreach (string item in tmp)
+            {
+                High.Items.Add(item);
+            }
+        }
+
+        private void Play_Click(object sender, RoutedEventArgs e)
+        {
+            Game game = new Game();
+            game.Show();
+            this.Close();
+
+        }
+
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
     }
 }
