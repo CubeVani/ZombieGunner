@@ -37,7 +37,8 @@ namespace ZombieGunner
 
         private void Play_Click(object sender, RoutedEventArgs e)
         {
-            Game game = new Game();
+            string name = nameEingabe.Text;
+            Game game = new Game(name);
             game.Show();
             this.Close();
 
@@ -47,6 +48,5 @@ namespace ZombieGunner
         {
             this.Close();
         }
-
     }
 }
