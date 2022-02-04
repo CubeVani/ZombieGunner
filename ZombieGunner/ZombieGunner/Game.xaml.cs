@@ -29,15 +29,9 @@ namespace ZombieGunner
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow mainWindow = new MainWindow();
+            MainWindow mainWindow = new MainWindow(_name, _score);
             mainWindow.Show();
             this.Close();
-        }
-
-        private void Window_Closed(object sender, EventArgs e)
-        {
-            string[] tmp = { _name + "" + _score };
-            File.WriteAllLines("../../../Highscore.txt", tmp);
         }
     }
 }

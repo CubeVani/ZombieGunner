@@ -21,7 +21,7 @@ namespace ZombieGunner
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        public MainWindow(string name, int score)
         {
             InitializeComponent();
         }
