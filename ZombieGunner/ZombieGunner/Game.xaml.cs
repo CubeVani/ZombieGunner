@@ -25,11 +25,15 @@ namespace ZombieGunner
             InitializeComponent();
             test.Content = name;
             _name = name;
+            _score = 0;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow mainWindow = new MainWindow(_name, _score);
+            HighscoreWerte highscore = new HighscoreWerte();
+            highscore.GameOver(_name + "," + _score);
+            highscore.Speichern();
+            MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
             this.Close();
         }

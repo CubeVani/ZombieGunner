@@ -21,15 +21,21 @@ namespace ZombieGunner
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow(string name, int score)
+        public string _name;
+        public int _score;
+
+        public MainWindow()
         {
             InitializeComponent();
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            string[] tmp = File.ReadAllLines("../../../Highscore.txt");
-            foreach (string item in tmp)
+
+
+            HighscoreWerte listHighscore = new HighscoreWerte();
+            List<Highscore> list = listHighscore.List;
+            foreach (Highscore item in list)
             {
                 High.Items.Add(item);
             }
