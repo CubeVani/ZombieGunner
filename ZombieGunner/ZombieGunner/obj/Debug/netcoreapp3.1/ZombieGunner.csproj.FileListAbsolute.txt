@@ -20,3 +20,25 @@ C:\Users\bib\OneDrive - bib & FHDW\Fächer\PRG\3-Sem\Prj\ZombieGunner\ZombieGunn
 C:\Users\bib\OneDrive - bib & FHDW\Fächer\PRG\3-Sem\Prj\ZombieGunner\ZombieGunner\obj\Debug\netcoreapp3.1\ZombieGunner.dll
 C:\Users\bib\OneDrive - bib & FHDW\Fächer\PRG\3-Sem\Prj\ZombieGunner\ZombieGunner\obj\Debug\netcoreapp3.1\ZombieGunner.pdb
 C:\Users\bib\OneDrive - bib & FHDW\Fächer\PRG\3-Sem\Prj\ZombieGunner\ZombieGunner\obj\Debug\netcoreapp3.1\ZombieGunner.genruntimeconfig.cache
+C:\Users\bib\Desktop\Fächer\PRG\ZombieGunner\GitHub\ZombieGunner\ZombieGunner\ZombieGunner\obj\Debug\netcoreapp3.1\ZombieGunner.csproj.AssemblyReference.cache
+C:\Users\bib\Desktop\Fächer\PRG\ZombieGunner\GitHub\ZombieGunner\ZombieGunner\ZombieGunner\obj\Debug\netcoreapp3.1\Game.g.cs
+C:\Users\bib\Desktop\Fächer\PRG\ZombieGunner\GitHub\ZombieGunner\ZombieGunner\ZombieGunner\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\bib\Desktop\Fächer\PRG\ZombieGunner\GitHub\ZombieGunner\ZombieGunner\ZombieGunner\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\bib\Desktop\Fächer\PRG\ZombieGunner\GitHub\ZombieGunner\ZombieGunner\ZombieGunner\obj\Debug\netcoreapp3.1\ZombieGunner_MarkupCompile.cache
+C:\Users\bib\Desktop\Fächer\PRG\ZombieGunner\GitHub\ZombieGunner\ZombieGunner\ZombieGunner\obj\Debug\netcoreapp3.1\ZombieGunner_MarkupCompile.lref
+C:\Users\bib\Desktop\Fächer\PRG\ZombieGunner\GitHub\ZombieGunner\ZombieGunner\ZombieGunner\obj\Debug\netcoreapp3.1\ZombieGunner.dll
+C:\Users\bib\Desktop\Fächer\PRG\ZombieGunner\GitHub\ZombieGunner\ZombieGunner\ZombieGunner\obj\Debug\netcoreapp3.1\ZombieGunner.pdb
+C:\Users\bib\Desktop\Fächer\PRG\ZombieGunner\GitHub\ZombieGunner\ZombieGunner\ZombieGunner\bin\Debug\netcoreapp3.1\ZombieGunner.exe
+C:\Users\bib\Desktop\Fächer\PRG\ZombieGunner\GitHub\ZombieGunner\ZombieGunner\ZombieGunner\bin\Debug\netcoreapp3.1\ZombieGunner.deps.json
+C:\Users\bib\Desktop\Fächer\PRG\ZombieGunner\GitHub\ZombieGunner\ZombieGunner\ZombieGunner\bin\Debug\netcoreapp3.1\ZombieGunner.runtimeconfig.json
+C:\Users\bib\Desktop\Fächer\PRG\ZombieGunner\GitHub\ZombieGunner\ZombieGunner\ZombieGunner\bin\Debug\netcoreapp3.1\ZombieGunner.runtimeconfig.dev.json
+C:\Users\bib\Desktop\Fächer\PRG\ZombieGunner\GitHub\ZombieGunner\ZombieGunner\ZombieGunner\bin\Debug\netcoreapp3.1\ZombieGunner.dll
+C:\Users\bib\Desktop\Fächer\PRG\ZombieGunner\GitHub\ZombieGunner\ZombieGunner\ZombieGunner\bin\Debug\netcoreapp3.1\ZombieGunner.pdb
+C:\Users\bib\Desktop\Fächer\PRG\ZombieGunner\GitHub\ZombieGunner\ZombieGunner\ZombieGunner\obj\Debug\netcoreapp3.1\Game.baml
+C:\Users\bib\Desktop\Fächer\PRG\ZombieGunner\GitHub\ZombieGunner\ZombieGunner\ZombieGunner\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\bib\Desktop\Fächer\PRG\ZombieGunner\GitHub\ZombieGunner\ZombieGunner\ZombieGunner\obj\Debug\netcoreapp3.1\ZombieGunner.g.resources
+C:\Users\bib\Desktop\Fächer\PRG\ZombieGunner\GitHub\ZombieGunner\ZombieGunner\ZombieGunner\obj\Debug\netcoreapp3.1\ZombieGunner.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bib\Desktop\Fächer\PRG\ZombieGunner\GitHub\ZombieGunner\ZombieGunner\ZombieGunner\obj\Debug\netcoreapp3.1\ZombieGunner.AssemblyInfoInputs.cache
+C:\Users\bib\Desktop\Fächer\PRG\ZombieGunner\GitHub\ZombieGunner\ZombieGunner\ZombieGunner\obj\Debug\netcoreapp3.1\ZombieGunner.AssemblyInfo.cs
+C:\Users\bib\Desktop\Fächer\PRG\ZombieGunner\GitHub\ZombieGunner\ZombieGunner\ZombieGunner\obj\Debug\netcoreapp3.1\ZombieGunner.csproj.CoreCompileInputs.cache
+C:\Users\bib\Desktop\Fächer\PRG\ZombieGunner\GitHub\ZombieGunner\ZombieGunner\ZombieGunner\obj\Debug\netcoreapp3.1\ZombieGunner.genruntimeconfig.cache

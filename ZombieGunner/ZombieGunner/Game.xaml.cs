@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.IO;
+using System.Windows.Threading;
 
 namespace ZombieGunner
 {
@@ -18,6 +19,10 @@ namespace ZombieGunner
     /// </summary>
     public partial class Game : Window
     {
+        bool goLeft, goRight, goUp, goDown;
+        int playerSpeed = 8;
+        DispatcherTimer gameTime = new DispatcherTimer();
+
         private int _score;
         private string _name;
         public Game(string name)
@@ -26,16 +31,78 @@ namespace ZombieGunner
             test.Content = name;
             _name = name;
             _score = 0;
+            gameTime.Tick += TimerEvent;
+            gameTime.Interval = TimeSpan.FromMilliseconds(20);
+            gameTime.Start();
+        }
+
+        private void TimerEvent(object sender, EventArgs e)
+        {
+            if(goUp == true && Canvas.GetTop(PlayerImage) > 5)
+            {
+                Canvas.SetTop(PlayerImage, Canvas.GetTop(PlayerImage) - playerSpeed);
+            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            HighscoreWerte highscore = new HighscoreWerte();
+                Canvas.SetLeft(PlayerImage, Canvas.GetLeft(PlayerImage) - playerSpeed);
+                testLeftLabel.Content = "Left: " + Canvas.GetLeft(PlayerImage);
+
+
+
+            /*HighscoreWerte highscore = new HighscoreWerte();
             highscore.GameOver(_name + "," + _score);
             highscore.Speichern();
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
-            this.Close();
+            this.Close(); */
+        }
+
+        private void Canvas_Player_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Down)
+            {
+                goDown = true;
+            }
+
+            if (e.Key == Key.Up)
+            {
+                goUp = true;
+            }
+
+            if (e.Key == Key.Left)
+            {
+                goLeft = true;
+            }
+
+            if (e.Key == Key.Right)
+            {
+                goRight = true;
+            }
+        }
+
+        private void Canvas_Player_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Down)
+            {
+                goDown = false;
+            }
+
+            if (e.Key == Key.Up)
+            {
+                goUp = false;
+            }
+
+            if (e.Key == Key.Left)
+            {
+                goLeft = false;
+            }
+
+            if (e.Key == Key.Right)
+            {
+                goRight = false;
+            }
         }
     }
 }

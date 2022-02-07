@@ -5,9 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ZombieGunner"
         mc:Ignorable="d"
-        Title="Game" Height="450" Width="800">
-    <Grid>
-        <Button x:Name="test" Content="test" HorizontalAlignment="Left" Margin="383,201,0,0" VerticalAlignment="Top" Click="Button_Click"/>
-
-    </Grid>
+        Title="Game" Height="550" Width="1100">
+    <Canvas Name="Canvas_Player" KeyDown="Canvas_Player_KeyDown" Focusable="True" KeyUp="Canvas_Player_KeyUp">
+        <Button x:Name="test" Content="test" HorizontalAlignment="Left" Margin="1002,504,0,0" VerticalAlignment="Top" Click="Button_Click" RenderTransformOrigin="0.596,0.528" Width="88"/>
+        <Label FontSize="27" Margin="871,0,0,488">Leben:</Label>
+        <Label FontSize="27" Margin="0,0,872,488">Punkte:</Label>
+        <Image Source="C:\Users\bib\Desktop\Fächer\PRG\ZombieGunner\GitHub\ZombieGunner\Pics\up.png" Name="PlayerImage" Canvas.Left="711" Canvas.Top="323"></Image>
+        <Label Name="testLeftLabel" Canvas.Top="286" FontSize="30" Width="123"></Label>
+    </Canvas>
 </Window>

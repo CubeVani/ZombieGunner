@@ -1,30 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bib\\OneDrive - bib & FHDW\\Fächer\\PRG\\3-Sem\\Prj\\ZombieGunner\\ZombieGunner\\ZombieGunner.csproj": {}
+    "C:\\Users\\bib\\Desktop\\Fächer\\PRG\\ZombieGunner\\GitHub\\ZombieGunner\\ZombieGunner\\ZombieGunner\\ZombieGunner.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bib\\OneDrive - bib & FHDW\\Fächer\\PRG\\3-Sem\\Prj\\ZombieGunner\\ZombieGunner\\ZombieGunner.csproj": {
+    "C:\\Users\\bib\\Desktop\\Fächer\\PRG\\ZombieGunner\\GitHub\\ZombieGunner\\ZombieGunner\\ZombieGunner\\ZombieGunner.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bib\\OneDrive - bib & FHDW\\Fächer\\PRG\\3-Sem\\Prj\\ZombieGunner\\ZombieGunner\\ZombieGunner.csproj",
+        "projectUniqueName": "C:\\Users\\bib\\Desktop\\Fächer\\PRG\\ZombieGunner\\GitHub\\ZombieGunner\\ZombieGunner\\ZombieGunner\\ZombieGunner.csproj",
         "projectName": "ZombieGunner",
-        "projectPath": "C:\\Users\\bib\\OneDrive - bib & FHDW\\Fächer\\PRG\\3-Sem\\Prj\\ZombieGunner\\ZombieGunner\\ZombieGunner.csproj",
+        "projectPath": "C:\\Users\\bib\\Desktop\\Fächer\\PRG\\ZombieGunner\\GitHub\\ZombieGunner\\ZombieGunner\\ZombieGunner\\ZombieGunner.csproj",
         "packagesPath": "C:\\Users\\bib\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bib\\OneDrive - bib & FHDW\\Fächer\\PRG\\3-Sem\\Prj\\ZombieGunner\\ZombieGunner\\obj\\",
+        "outputPath": "C:\\Users\\bib\\Desktop\\Fächer\\PRG\\ZombieGunner\\GitHub\\ZombieGunner\\ZombieGunner\\ZombieGunner\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\bib\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://teamcity.monogame.net/guestAuth/app/nuget/feed/_Root/default/v3/index.json": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://contoso.com/packages/": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
@@ -59,7 +60,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
