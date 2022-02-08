@@ -42,6 +42,18 @@ namespace ZombieGunner
             {
                 Canvas.SetTop(PlayerImage, Canvas.GetTop(PlayerImage) - playerSpeed);
             }
+            if (goDown == true && Canvas.GetTop(PlayerImage) < 500)
+            {
+                Canvas.SetTop(PlayerImage, Canvas.GetTop(PlayerImage) + playerSpeed);
+            }
+            if (goLeft == true && Canvas.GetLeft(PlayerImage) > 5)
+            {
+                Canvas.SetLeft(PlayerImage, Canvas.GetLeft(PlayerImage) - playerSpeed);
+            }
+            if (goRight == true && Canvas.GetLeft(PlayerImage) < 1000)
+            {
+                Canvas.SetLeft(PlayerImage, Canvas.GetLeft(PlayerImage) + playerSpeed);
+            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -61,22 +73,22 @@ namespace ZombieGunner
 
         private void Canvas_Player_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.Down)
+            if (e.Key == Key.S)
             {
                 goDown = true;
             }
 
-            if (e.Key == Key.Up)
+            if (e.Key == Key.W)
             {
                 goUp = true;
             }
 
-            if (e.Key == Key.Left)
+            if (e.Key == Key.A)
             {
                 goLeft = true;
             }
 
-            if (e.Key == Key.Right)
+            if (e.Key == Key.D)
             {
                 goRight = true;
             }
@@ -84,22 +96,22 @@ namespace ZombieGunner
 
         private void Canvas_Player_KeyUp(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.Down)
+            if (e.Key == Key.S)
             {
                 goDown = false;
             }
 
-            if (e.Key == Key.Up)
+            if (e.Key == Key.W)
             {
                 goUp = false;
             }
 
-            if (e.Key == Key.Left)
+            if (e.Key == Key.A)
             {
                 goLeft = false;
             }
 
-            if (e.Key == Key.Right)
+            if (e.Key == Key.D)
             {
                 goRight = false;
             }

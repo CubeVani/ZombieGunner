@@ -6,4 +6,14 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="up.png" />
+    <None Remove="zombieGunnerBg.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="up.png" />
+    <Resource Include="zombieGunnerBg.png" />
+  </ItemGroup>
+
 </Project>

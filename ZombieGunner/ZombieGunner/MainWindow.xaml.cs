@@ -27,11 +27,13 @@ namespace ZombieGunner
         public MainWindow()
         {
             InitializeComponent();
+
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-
+            playButton.ToolTip = "Bitte einen Namen eingeben!";
+            playButton.IsEnabled = false;
 
             HighscoreWerte listHighscore = new HighscoreWerte();
             List<Highscore> list = listHighscore.List;
@@ -53,6 +55,21 @@ namespace ZombieGunner
         private void Exit_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        private void nameEingabe_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+            if (nameEingabe.Text == "")
+            {
+                playButton.ToolTip = "Bitte einen Namen eingeben!";
+                playButton.IsEnabled = false;
+            }
+            else
+            {
+                playButton.IsEnabled = true;
+                playButton.ToolTip = "Viel Spaß!";
+            }
         }
     }
 }
