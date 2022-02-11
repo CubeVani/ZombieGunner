@@ -11,6 +11,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.IO;
 using System.Windows.Threading;
+using System.Linq;
 
 namespace ZombieGunner
 {
@@ -20,10 +21,11 @@ namespace ZombieGunner
     public partial class Game : Window
     {
         bool goLeft, goRight, goUp, goDown;
-        int playerSpeed = 8;
+        int playerSpeed = 4;
         DispatcherTimer gameTime = new DispatcherTimer();
 
         private int _score;
+        private int _health;
         private string _name;
         public Game(string name)
         {
@@ -32,7 +34,7 @@ namespace ZombieGunner
             _name = name;
             _score = 0;
             gameTime.Tick += TimerEvent;
-            gameTime.Interval = TimeSpan.FromMilliseconds(20);
+            gameTime.Interval = TimeSpan.FromMilliseconds(5);
             gameTime.Start();
         }
 
@@ -41,18 +43,30 @@ namespace ZombieGunner
             if(goUp == true && Canvas.GetTop(PlayerImage) > 5)
             {
                 Canvas.SetTop(PlayerImage, Canvas.GetTop(PlayerImage) - playerSpeed);
+                PlayerImage.Source = new BitmapImage(new Uri(@"C:\Users\bib\Desktop\Fächer\PRG\ZombieGunner\GitHub\ZombieGunner\Pics\up.png"));
             }
             if (goDown == true && Canvas.GetTop(PlayerImage) < 500)
             {
                 Canvas.SetTop(PlayerImage, Canvas.GetTop(PlayerImage) + playerSpeed);
+                PlayerImage.Source = new BitmapImage(new Uri(@"C:\Users\bib\Desktop\Fächer\PRG\ZombieGunner\GitHub\ZombieGunner\Pics\down.png"));
             }
             if (goLeft == true && Canvas.GetLeft(PlayerImage) > 5)
             {
                 Canvas.SetLeft(PlayerImage, Canvas.GetLeft(PlayerImage) - playerSpeed);
+                PlayerImage.Source = new BitmapImage(new Uri(@"C:\Users\bib\Desktop\Fächer\PRG\ZombieGunner\GitHub\ZombieGunner\Pics\left.png"));
             }
             if (goRight == true && Canvas.GetLeft(PlayerImage) < 1000)
             {
                 Canvas.SetLeft(PlayerImage, Canvas.GetLeft(PlayerImage) + playerSpeed);
+                PlayerImage.Source = new BitmapImage(new Uri(@"C:\Users\bib\Desktop\Fächer\PRG\ZombieGunner\GitHub\ZombieGunner\Pics\right.png"));
+            }
+
+            foreach(var x in Canvas_Player.Children.OfType<Rectangle>())
+            {
+                if(x is Rectangle && (string)x.Tag == "bullet")
+                {
+                    Canvas.SetTop(x, Canvas.GetTop(x) - 20);
+                }
             }
         }
 
@@ -114,6 +128,22 @@ namespace ZombieGunner
             if (e.Key == Key.D)
             {
                 goRight = false;
+            }
+
+            if(e.Key == Key.Space)
+            {
+                Rectangle newBullet = new Rectangle
+                {
+                    Tag = "bullet",
+                    Height = 10,
+                    Width = 10,
+                    Fill = Brushes.Black
+                };
+
+                Canvas.SetTop(newBullet, Canvas.GetTop(PlayerImage) + PlayerImage.Height / 2);
+                Canvas.SetLeft(newBullet, Canvas.GetLeft(PlayerImage) + PlayerImage.Width / 2);
+
+                Canvas_Player.Children.Add(newBullet);
             }
         }
     }
