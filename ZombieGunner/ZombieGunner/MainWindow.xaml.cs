@@ -21,9 +21,6 @@ namespace ZombieGunner
     /// </summary>
     public partial class MainWindow : Window
     {
-        public string _name;
-        public int _score;
-
         public MainWindow()
         {
             InitializeComponent();
@@ -35,8 +32,12 @@ namespace ZombieGunner
             playButton.ToolTip = "Bitte einen Namen eingeben!";
             playButton.IsEnabled = false;
 
+
             HighscoreWerte listHighscore = new HighscoreWerte();
             List<Highscore> list = listHighscore.List;
+
+
+           
             foreach (Highscore item in list)
             {
                 High.Items.Add(item);
