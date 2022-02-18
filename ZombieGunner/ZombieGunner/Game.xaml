@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:ZombieGunner"
         mc:Ignorable="d"
         Title="Game" Height="550" Width="800"  KeyDown="Canvas_Player_KeyDown" KeyUp="Canvas_Player_KeyUp">
-    <Canvas Name="Canvas_Player" Focusable="True" >
+    <Canvas Name="Canvas_Player" Focusable="True" Background="#D2B48C">
         <Label FontSize="27" Margin="871,0,0,488" Name="lebenTxt" Canvas.Left="-243">Leben:</Label>
         <Label FontSize="27" Margin="0,0,872,488" Name="scoreTxt">Punkte:</Label>
         <Image Source="/up.png" Name="PlayerImage" Canvas.Left="358" Canvas.Top="379" Height="91" Width="59"></Image>
