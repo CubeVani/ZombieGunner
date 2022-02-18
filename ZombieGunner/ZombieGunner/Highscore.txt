@@ -1,6 +1,3 @@
-dre,0
-h3u,1
-e343,0
-,0
-,0
-,0
+sadasd,10
+sdsd,2
+lokman,0

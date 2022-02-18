@@ -38,10 +38,9 @@ namespace ZombieGunner
         public Game(string name)
         {
             InitializeComponent();
-            test.Content = name;
             _name = name;
             _score = 0;
-            _health = 100;
+            _health = 5;
             gameTime.Tick += TimerEvent;
             gameTime.Interval = TimeSpan.FromMilliseconds(5);
             gameTime.Start();
@@ -53,7 +52,7 @@ namespace ZombieGunner
             {
                 Canvas.SetTop(PlayerImage, Canvas.GetTop(PlayerImage) - playerSpeed);
             }
-            if (goDown == true && Canvas.GetTop(PlayerImage) < 400)
+            if (goDown == true && Canvas.GetTop(PlayerImage) < (int)Application.Current.MainWindow.Width -400)
             {
                 Canvas.SetTop(PlayerImage, Canvas.GetTop(PlayerImage) + playerSpeed);
             }
@@ -61,7 +60,7 @@ namespace ZombieGunner
             {
                 Canvas.SetLeft(PlayerImage, Canvas.GetLeft(PlayerImage) - playerSpeed);
             }
-            if (goRight == true && Canvas.GetLeft(PlayerImage) < 1000)
+            if (goRight == true && Canvas.GetLeft(PlayerImage) < (int)Application.Current.MainWindow.Width -100)
             {
                 Canvas.SetLeft(PlayerImage, Canvas.GetLeft(PlayerImage) + playerSpeed);
             }
@@ -114,7 +113,7 @@ namespace ZombieGunner
                     if (Canvas.GetTop(x) > 550)
                     {
                         itemRemover.Add(x);
-                        _health -= 10;
+                        _health -= 1;
                     }
 
                     Rect enemyHitbox = new Rect(Canvas.GetLeft(x), Canvas.GetTop(x), x.Width, x.Height);
@@ -122,7 +121,7 @@ namespace ZombieGunner
                     if (playerHitBox.IntersectsWith(enemyHitbox))
                     {
                         itemRemover.Add(x);
-                        _health -= 5;
+                        _health -= 1;
                     }
                 }
 
@@ -132,21 +131,18 @@ namespace ZombieGunner
             {
                 Canvas_Player.Children.Remove(r);
             }
-        }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-                Canvas.SetLeft(PlayerImage, Canvas.GetLeft(PlayerImage) - playerSpeed);
-                testLeftLabel.Content = "Left: " + Canvas.GetLeft(PlayerImage);
-
-
-
-            /*HighscoreWerte highscore = new HighscoreWerte();
-            highscore.GameOver(_name + "," + _score);
-            highscore.Speichern();
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.Show();
-            this.Close(); */
+            if(_health == 0)
+            {
+                MessageBox.Show("Du bist tot :(" , "Death", MessageBoxButton.OK);
+                _health = 5;
+                HighscoreWerte highscore = new HighscoreWerte();
+                highscore.GameOver(_name + "," + _score);
+                highscore.Speichern();
+                MainWindow mainWindow = new MainWindow();
+                mainWindow.Show();
+                this.Close(); 
+            }
         }
 
         private void Canvas_Player_KeyDown(object sender, KeyEventArgs e)
@@ -220,6 +216,18 @@ namespace ZombieGunner
             switch (enemySpriteCounter)
             {
                 case 1:
+                    enemy.ImageSource = new BitmapImage(new Uri(@"Pics\zdown.png", UriKind.Relative));
+                    break;
+                case 2:
+                    enemy.ImageSource = new BitmapImage(new Uri(@"Pics\zdown.png", UriKind.Relative));
+                    break;
+                case 3:
+                    enemy.ImageSource = new BitmapImage(new Uri(@"Pics\zdown.png", UriKind.Relative));
+                    break;
+                case 4:
+                    enemy.ImageSource = new BitmapImage(new Uri(@"Pics\zdown.png", UriKind.Relative));
+                    break;
+                case 5:
                     enemy.ImageSource = new BitmapImage(new Uri(@"Pics\zdown.png", UriKind.Relative));
                     break;
             }
