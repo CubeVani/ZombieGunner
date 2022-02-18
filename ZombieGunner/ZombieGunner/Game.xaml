@@ -8,8 +8,8 @@
         Title="Game" Height="550" Width="1100"  KeyDown="Canvas_Player_KeyDown" KeyUp="Canvas_Player_KeyUp">
     <Canvas Name="Canvas_Player" Focusable="True" >
         <Button x:Name="test" Content="test" HorizontalAlignment="Left" Margin="1002,504,0,0" VerticalAlignment="Top" Click="Button_Click" RenderTransformOrigin="0.596,0.528" Width="88"/>
-        <Label FontSize="27" Margin="871,0,0,488">Leben:</Label>
-        <Label FontSize="27" Margin="0,0,872,488">Punkte:</Label>
+        <Label FontSize="27" Margin="871,0,0,488" Name="lebenTxt">Leben:</Label>
+        <Label FontSize="27" Margin="0,0,872,488" Name="scoreTxt">Punkte:</Label>
         <Image Source="/up.png" Name="PlayerImage" Canvas.Left="502" Canvas.Top="228" Height="113" Width="83"></Image>
         <Label Name="testLeftLabel" Canvas.Top="286" FontSize="30" Width="123"></Label>
     </Canvas>
