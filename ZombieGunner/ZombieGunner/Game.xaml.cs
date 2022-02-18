@@ -52,7 +52,6 @@ namespace ZombieGunner
             if(goUp == true && Canvas.GetTop(PlayerImage) > 5)
             {
                 Canvas.SetTop(PlayerImage, Canvas.GetTop(PlayerImage) - playerSpeed);
-                PlayerImage.Source = new BitmapImage(new Uri(@"C:\Users\bib\Desktop\Fächer\PRG\ZombieGunner\GitHub\ZombieGunner\Pics\up.png"));
             }
             if (goDown == true && Canvas.GetTop(PlayerImage) < 400)
             {
@@ -221,7 +220,7 @@ namespace ZombieGunner
             switch (enemySpriteCounter)
             {
                 case 1:
-                    enemy.ImageSource = new BitmapImage(new Uri(@"C:\Users\bib\Desktop\Fächer\PRG\ZombieGunner\GitHub\ZombieGunner\Pics\zdown.png"));
+                    enemy.ImageSource = new BitmapImage(new Uri(@"Pics\zdown.png", UriKind.Relative));
                     break;
             }
 
