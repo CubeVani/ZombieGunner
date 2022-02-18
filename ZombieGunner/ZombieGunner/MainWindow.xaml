@@ -12,12 +12,12 @@
         </Grid.Background>
         <Label Content="Zombie" HorizontalAlignment="Left" Height="56" Margin="30,40,0,0" VerticalAlignment="Top" Width="162" FontSize="32pt"/>
         <Label Content="Gunner" HorizontalAlignment="Left" Height="56" Margin="100,100,0,0" VerticalAlignment="Top" Width="162" FontSize="32pt"/>
-        <Button x:Name="playButton" Content="Play" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="100" Click="Play_Click" ToolTipService.ShowOnDisabled="True" Margin="81,187,0,0" RenderTransformOrigin="0.517,0.542" />
-        <Button Content="Exit" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="100" Margin="81,250,0,0" Click="Exit_Click"/>
-        <Label Content="Highscore" HorizontalAlignment="Left" Height="52" Margin="570,88,0,0" VerticalAlignment="Top" Width="150" FontSize="18pt"/>
-        <ListBox x:Name="High" IsEnabled="False" HorizontalAlignment="Left" Height="200" Margin="570,140,0,0" VerticalAlignment="Top" Width="150"/>
-        <TextBox x:Name="nameEingabe" HorizontalAlignment="Left" Height="32" Margin="545,375,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" TextChanged="nameEingabe_TextChanged"/>
+        <Button x:Name="playButton" FontSize="16pt" Content="Play" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="100" Click="Play_Click" ToolTipService.ShowOnDisabled="True" Margin="81,187,0,0" RenderTransformOrigin="0.517,0.542" />
+        <Button Content="Exit" FontSize="16pt" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="100" Margin="81,250,0,0" Click="Exit_Click"/>
+        <Label Content="Highscore" HorizontalAlignment="Left" Height="52" Margin="570,88,0,0" VerticalAlignment="Top" Width="150" FontSize="23pt"/>
+        <TextBox x:Name="nameEingabe" HorizontalAlignment="Left" Height="31" Margin="545,375,0,0" FontSize="15pt" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" TextChanged="nameEingabe_TextChanged"/>
         <Label Content="Gib deinen Namen ein" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Height="24" Margin="570,346,0,0" VerticalAlignment="Top" Width="150" Foreground="White" FontSize="10pt"/>
+        <ListBox x:Name="High" HorizontalAlignment="Left" Height="200" Margin="570,140,0,0" VerticalAlignment="Top" Width="150"/>
 
     </Grid>
 </Window>
